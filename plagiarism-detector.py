@@ -2,7 +2,7 @@
 import os
 import string
 
-# 1. Text Processing Function
+# Text Processing Function
 def process_text(file_path):
     stop_words = {'a', 'an', 'the', 'is', 'in', 'of', 'and', 'to', 'for', 'on', 'with'}
     try:
@@ -18,17 +18,17 @@ def process_text(file_path):
     clean_words = [word for word in words if word not in stop_words]
     return clean_words
 
-# 2. Word Search
+# Word Search
 def word_search(word, essay1_words, essay2_words):
     count1 = essay1_words.count(word.lower())
     count2 = essay2_words.count(word.lower())
     return count1, count2
 
-# 3. Common Words Report
+# Common Words Report
 def common_words(essay1_words, essay2_words):
     return set(essay1_words).intersection(set(essay2_words))
 
-# 4. Plagiarism Calculation
+# Plagiarism Calculation
 def plagiarism_check(essay1_words, essay2_words):
     set1 = set(essay1_words)
     set2 = set(essay2_words)
@@ -38,9 +38,9 @@ def plagiarism_check(essay1_words, essay2_words):
 
     print(f"\nPlagiarism Percentage: {similarity:.2f}%")
     if similarity >= 50:
-        print("⚠️ Similarity is likely.")
+        print("Similarity is likely.")
     else:
-        print("✅ Similarity is low.")
+        print(" Similarity is low.")
 
     print("\nCommon Words:")
     print(intersection)
