@@ -6,7 +6,7 @@ The Plagiarism Detector project is a Python application to compare two essays (e
 It works with text, provides word search, provides word frequency reports, and indicates a plagiarism rate.
 
 #Setup
-f you run the setup script the necessary folders are automatically created(two essays for testing, reports folder for similarity reports, and setup.log for confiming setup).
+If you run the setup script, the necessary folders are automatically created(two essays for testing, a reports folder for similarity reports, and a setup.log for confirming setup).
 
 bash 
 ./setup.sh 
